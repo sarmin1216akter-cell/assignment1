@@ -1,0 +1,458 @@
+
+*{
+
+    margin:0;
+    padding:0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header nav {
+    background-color: #fff;
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr ;
+   
+}
+header nav .logo{
+    padding:20px 20px;
+}
+header nav .logo a img{
+    width: 100px;
+}
+header nav .menu{
+    align-content:center;
+    text-align:center;
+}
+header nav .menu ul{
+    list-style: none;
+}
+header nav .menu ul li{
+    display: inline-block;
+    font-size:18px;
+    padding:0 10px;
+
+
+}
+.button{
+    
+    padding:10px;
+    text-align:right;
+}
+.button a{
+    background-color:rgb(13, 13, 165);
+    text-decoration:none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    margin:8px;
+}
+                                /* banner-section */
+
+.banner-section{
+    background-image: url(./images/banner.jpg);
+    background-size: cover;
+    min-height:600px;
+
+ }
+ .overlay{
+	background:#4c4d6c50;
+}
+ .banner-content{
+    text-align: center;
+    color:white;
+   
+ }
+  .banner-content h1{
+    margin-top:200px;
+    margin-bottom:50px;
+    font-size:60px;
+  }
+  .banner-content p{
+    font-size:18px;
+    margin-bottom:50px;
+    line-height:1.5;
+
+
+  }
+  .banner-section .button{
+    text-align:center;
+    margin-top:280px;
+    margin-bottom:50px;
+  }
+                                        /* speakers-section */
+.speaker-section{
+    margin-top:10px;
+    margin-bottom:30px;
+    
+}
+.speaker-section h2{
+    text-align:center;
+    font-size:60px;
+    margin-top:50px;
+    margin-bottom:50px;
+
+
+}
+.box-section{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:40px;
+    
+}
+.box-section .box{
+    padding:0 0 20px 0;
+    text-align:left;
+    border-radius:20px;
+    border:2px solid rgba(128, 128, 128, 0.356);
+
+    
+    
+}
+.box img{
+    width:100%;
+    border-radius:20px 20px 0 0;
+}
+.box .content{
+    padding-left:20px;
+}
+.content h6{
+    color:blue;
+    margin-top:20px;
+    margin-bottom:20px;
+    font-size:14px;
+    font-weight:600;
+}
+.content h3{
+    font-size:18px;
+    font-weight:600;
+    color:black;
+    margin-bottom:20px;
+
+}
+.content p{
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:20px;
+    color:grey;
+}
+                /* Pricing section */
+.pricing-section{}
+
+ .price h2{
+    font-size:60px;
+    font-weight:600;
+    margin-top:50px;
+    margin-bottom:30px;
+    text-align:center;
+}
+ .price p{
+    font-size:20px;
+    font-weight:500;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+.price-box{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+
+
+}
+                    /* price-item1 */
+.price-item1{
+    width:90%;
+    border:2px solid rgba(128, 128, 128, 0.356);
+    border-radius:20px;
+    padding:30px;
+}
+.price-item1 h5{
+    font-size:16px;
+    font-weight:600;
+    margin-bottom:10px;
+    color:grey;
+}
+.price-item1 h3{
+    font-size:40px;
+    font-weight:600;
+    margin-bottom:10px;
+}
+.price-item1 p{
+    font-size:16px;
+    font-weight:600;
+    color:grey;
+}
+.price-item1 ul{
+   margin-top:20px; 
+   border-top:1px solid rgba(128, 128, 128, 0.356);
+   padding-left:20px;
+   padding-top:20px;
+    
+}
+.price-item1 ul li{
+    font-size: 16px;
+    margin: 10px 0;
+    color:grey;
+    list-style-type: none;
+}
+.price-item1 ul li::before{
+    content: "\2022";
+    color: blue;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em;
+}
+.button1{
+    width: 100%;
+    text-align:center;
+    margin-top:30px;
+    border:1px solid rgba(25, 11, 224, 0.678);
+    border-radius:5px;
+    padding:14px;
+    background-color: transparent;
+   
+}
+.button1 a{
+    text-decoration:none;
+    color:blue;
+    font-size:14px;
+    font-weight:600;
+}
+
+                    /* price-item2 */
+.price-item2{
+    width:90%;
+    border:2px solid rgba(128, 128, 128, 0.356);
+    border-radius:20px;
+    padding:30px;
+    background-color: black;
+}
+.price-item2 h5{
+    font-size:16px;
+    font-weight:600;
+    margin-bottom:10px;
+    color:blue;
+}
+.price-item2 h3{
+    font-size:40px;
+    font-weight:600;
+    margin-bottom:10px;
+    color: #fff;
+}
+.price-item2 p{
+    font-size:16px;
+    font-weight:600;
+    color:grey;
+}
+.price-item2 ul{
+   margin-top:20px; 
+   border-top:1px solid rgba(128, 128, 128, 0.356);
+   padding-left:20px;
+   padding-top:20px;
+    
+}
+.price-item2 ul li{
+    font-size: 16px;
+    margin: 10px 0;
+    color:white;
+    list-style-type: none;
+}
+.price-item2 ul li::before{
+    content: "\2022";
+    color: blue;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em;
+}
+.button2{
+    width: 100%;
+    text-align:center;
+    margin-top:30px;
+    border:1px solid rgba(25, 11, 224, 0.678);
+    border-radius:5px;
+    padding:14px;
+    background-color: blue;
+   
+}
+.button2 a{
+    text-decoration:none;
+    color:white;
+    font-size:14px;
+    font-weight:600;
+}
+
+
+
+                    /* price-item3 */
+.button3{
+                    
+    width: 100%;
+    text-align:center;
+    margin-top:30px;
+    border:1px solid black;
+    border-radius:5px;
+    padding:14px;
+    background-color: transparent;
+   
+}
+.button3 a{
+    text-decoration:none;
+    color:black;
+    font-size:14px;
+    font-weight:600;
+}
+
+                                /* Something-Section */
+
+.something-section .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:30px;
+}
+                            /* faq-section */
+.faq-section{
+    padding: 80px 0;
+}
+.faq-section h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+}
+.faq-section p{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.faq-item{
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left:5px solid #007bff ;
+    border-radius: 8px;
+    box-shadow:0 2px 10px rgba(0, 0, 0, 0.08)
+}
+.faq-item h3{
+    color: #007bff;
+    margin-bottom: 10px;
+}
+.faq-item p{
+    color: #555;
+    line-height:1.6;
+    text-align:left;
+}
+                                /* newsletter-section */
+
+   
+.newsletter-section{
+    max-width:80%;
+    color: #101828;
+    font-weight: 400;
+    margin-top: 82px;
+    font-size: 12px;
+    padding-left: 30px;
+
+}
+.newsletter-section h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+   
+}
+
+.form-group {
+  font-family: Arial, sans-serif;
+  margin-bottom: 30px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #333;
+  margin-top: 20px;
+}
+.form-group input {
+
+    border-radius: 8px;
+    width: 100%;
+    border-width: 1px;
+    padding: 10px 14px;
+    box-shadow: 0px 1px 2px 0px #1018280D;
+    border: 1px solid #D0D5DD
+
+}
+.mobile-input {
+    display: flex;
+    border-radius: 8px;
+    margin: 0;
+    padding: 10px 14px;
+    box-shadow: 0px 1px 2px 0px #1018280D;
+    border: 1px solid #D0D5DD
+}
+
+.mobile-input select {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  
+}
+
+.mobile-input input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  flex: 1;
+}
+
+.mobile-input:focus-within {
+  border-color: #1a73e8;
+}
+.button{
+    text-align: center;
+}
+
+
+
+
+                                /* footer-section */
+footer {
+    background-color: rgba(0, 0, 0, 0.185);
+}
+.footer-top {
+
+    display:flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    text-align: center;
+
+}
+.footer-left{
+    width: 100px;
+}
+hr{
+    margin-top: 20px;
+}
+ .footer-bottom{
+    padding:10px;
+    text-align: center;
+    margin-top: 20px;
+ }
+ .footer-bottom p a{
+    text-decoration: none;
+ }
+
+                        /* end */
